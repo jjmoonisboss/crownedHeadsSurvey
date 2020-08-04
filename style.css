@@ -1,5 +1,6 @@
+
 .survey {
-  background-color:#FFE5E3
+  background-color:#FFE5E3;
 }
 
 /* Navigation Bar */
@@ -17,3 +18,32 @@
   width: 100%;
   margin: 10px;
 }
+
+/* BUTTON STYLES */
+
+/* Label */
+
+label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  margin: 12px 0;
+
+  cursor: pointer;
+  position: relative;
+}
+
+/* Input 
+input {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+*/
+

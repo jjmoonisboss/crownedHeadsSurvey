@@ -3,7 +3,7 @@ function kinkyResults(){
   // finding id curly hair from curly.html and storing it in the var form
 
 // its grabbing curltype and extracting its value which stores it into form
-  var hairType = form.elements['curltype'].value; // 4a, 4b, 4c
+  var hairType = form.elements['4-hair'].value; // 3a, 3b, 3c
   var porosity = form.elements['pore'].value; //high, low, normal
   var frizz = form.elements['frizz'].value; //none,regular,crazy
   var damage = form.elements['damage'].value; //nodamage,somedamage, highdamage
@@ -18,34 +18,34 @@ function kinkyResults(){
 // }
 
 
-  if (hairType == "3a"){
-    result="https://sites.google.com/csedge.org/results-3a/home";
-    // if (porosity == "high"){
-    //     if (damage == "highdamage"){
-    //       result="https://sites.google.com/csedge.org/curlyhairresults/home";
-    //     }
-    // }
-  }
-  else if (hairType == "3b"){
-    result="https://sites.google.com/csedge.org/results-3b/home";
-    //   if (porosity == "high"){
-    //   if (frizz == "crazy"){
-    //     result="https://sites.google.com/csedge.org/curlyhairresults/home";
-    //   }
-    // }
-  }
+//   if (hairType == "3a"){
+//     result="https://sites.google.com/csedge.org/results-3a/home";
+//     // if (porosity == "high"){
+//     //     if (damage == "highdamage"){
+//     //       result="https://sites.google.com/csedge.org/curlyhairresults/home";
+//     //     }
+//     // }
+//   }
+//   else if (hairType == "3b"){
+//     result="https://sites.google.com/csedge.org/results-3b/home";
+//     //   if (porosity == "high"){
+//     //   if (frizz == "crazy"){
+//     //     result="https://sites.google.com/csedge.org/curlyhairresults/home";
+//     //   }
+//     // }
+//   }
   
-  else if (hairType == "3c"){
-    result="https://sites.google.com/csedge.org/results-3c/home ";
-      // if (porosity == "high"){
-      // if (frizz == "crazy"){
-      //   result="";
-      //}
-    //}
-  }
+//   else if (hairType == "3c"){
+//     result="https://sites.google.com/csedge.org/results-3c/home ";
+//       // if (porosity == "high"){
+//       // if (frizz == "crazy"){
+//       //   result="";
+//       //}
+//     //}
+//   }
 
 
-window.open(result);
+// window.open(result);
 }
 
 function displayResults(event) {
@@ -76,9 +76,9 @@ function renderProduct(product) {
   
 
   function shouldShowProduct(product) {
-      var form = document.getElementById("curlyhair");
+      var form = document.getElementById("kinkyhair");
 
-      var hairType = form.elements['curltype'].value; // 3a, 3b, 3c
+      var hairType = form.elements['4-hair'].value; // 3a, 3b, 3c
       var porosity = form.elements['pore'].value; //high, low, normal
       var frizz = form.elements['frizz'].value; //none,regular,crazy
       var damage = form.elements['damage'].value; //nodamage,somedamage, highdamage
