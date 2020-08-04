@@ -3,7 +3,7 @@ function kinkyResults(){
   // finding id curly hair from curly.html and storing it in the var form
 
 // its grabbing curltype and extracting its value which stores it into form
-  var hairType = form.elements['4-hair'].value; // 3a, 3b, 3c
+  var hairType = form.elements['4-hair'].value; // 4a, 4b, 4c
   var porosity = form.elements['pore'].value; //high, low, normal
   var frizz = form.elements['frizz'].value; //none,regular,crazy
   var damage = form.elements['damage'].value; //nodamage,somedamage, highdamage
@@ -51,10 +51,10 @@ function kinkyResults(){
 function displayResults(event) {
   console.log("e");
   var results = [
-    {url: "https://i01.hsncdn.com/is/image/HomeShoppingNetwork/carols-daughter-almond-milk-ultra-nourishing-hair-mask~553557.jpg", name: "Carol’s Daughter Almond Milk Ultra-Nourishing Hair Mask", type: "3" ,frizz: false , damage:false , growth:false, dry:true}, 
-    {url: "https://image.influenster.com/eyJrZXkiOiAibWVkaWEvcHJvZHVjdC9pbWFnZS9wcm9kdWN0L2ltYWdlL2ZlNDRmYzEzYjJjYTMwYjg4MDdmZjhkZWZlYTQ5YzU5MC5qcGciLCAiZWRpdHMiOiB7InJlc2l6ZSI6IHsiaGVpZ2h0IjogNzUwLCAid2lkdGgiOiA3NTAsICJiYWNrZ3JvdW5kIjogeyJyIjogMSwgImIiOiAxLCAiYWxwaGEiOiAwLCAiZyI6IDF9LCAid2l0aG91dEVubGFyZ2VtZW50IjogdHJ1ZSwgImZpdCI6ICJpbnNpZGUifX0sICJidWNrZXQiOiAiaW5mbHVlbnN0ZXJfcHJvZHVjdGlvbiIsICJleHRlbmQiOiB7fX0=", name: "ArtNaturals Moroccan Argan Oil Hair Loss Shampoo & Conditioner Set",name: "argan oil hair loss shampoo", type: "3" ,frizz:false, damage:false , growth:true, dry:false}, 
-    {url: "https://lh3.googleusercontent.com/proxy/ovZLAP0YS8NK8Re3GB8jgHXWicrDfYZf65xomH3imzrAj16PMhNK29H2qDzUXMkOp7QXSBkS3CdRUnv7f67ZZTgreFLv3l4hCJhK9L_NhJj0jgg-9wk8HFly-ZFH7et0r3lblTWIjGejpv5ySarsamcf1Q", name: "mop top anti frizz gel", type: "3" , frizz:true , damage:false , growth:false, dry:false},
-    {url: "https://cdn.shopify.com/s/files/1/1006/4028/products/moist_shampoo_website2_1024x.png?v=1594676151", name: "Bounce Curl Pure Silk Moisturizing Shampoo", type: "3" , frizz:false , damage:true , growth:false, dry:false}];
+    {url: "https://cdn.shopify.com/s/files/1/0075/0639/5203/products/Untitled-1_904c9223-4ffc-4b87-a57d-693893a49df2_600x.jpg?v=1576759264", name: "cream of nature mango shampoo+ condish set", type: "4" ,frizz: false , damage:false , growth:false, dry:true}, 
+    {url: "https://image.influenster.com/eyJrZXkiOiAibWVkaWEvcHJvZHVjdC9pbWFnZS9wcm9kdWN0L2ltYWdlL2ZlNDRmYzEzYjJjYTMwYjg4MDdmZjhkZWZlYTQ5YzU5MC5qcGciLCAiZWRpdHMiOiB7InJlc2l6ZSI6IHsiaGVpZ2h0IjogNzUwLCAid2lkdGgiOiA3NTAsICJiYWNrZ3JvdW5kIjogeyJyIjogMSwgImIiOiAxLCAiYWxwaGEiOiAwLCAiZyI6IDF9LCAid2l0aG91dEVubGFyZ2VtZW50IjogdHJ1ZSwgImZpdCI6ICJpbnNpZGUifX0sICJidWNrZXQiOiAiaW5mbHVlbnN0ZXJfcHJvZHVjdGlvbiIsICJleHRlbmQiOiB7fX0=", name: "ArtNaturals Moroccan Argan Oil Hair Loss Shampoo & Conditioner Set",name: "argan oil hair loss shampoo", type: "4" ,frizz:false, damage:false , growth:true, dry:false}, 
+    {url: "https://lh3.googleusercontent.com/proxy/ovZLAP0YS8NK8Re3GB8jgHXWicrDfYZf65xomH3imzrAj16PMhNK29H2qDzUXMkOp7QXSBkS3CdRUnv7f67ZZTgreFLv3l4hCJhK9L_NhJj0jgg-9wk8HFly-ZFH7et0r3lblTWIjGejpv5ySarsamcf1Q", name: "mop top anti frizz gel", type: "4" , frizz:true , damage:false , growth:false, dry:false},
+    {url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nouripanati.com%2Fproducts%2Fhydrathermanaturals-aminoplusproteindeepconditi&psig=AOvVaw2CuGdw65q85apJYEArqtCW&ust=1596657672294000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDUsb2rgusCFQAAAAAdAAAAABAE", name: "Hydratherma Naturals Amino Plus Protein Deep Conditioning Treatment, 8 Oz", type: "4" , frizz:false , damage:true , growth:false, dry:false}];
 
   // represents one product ^^ , everything inside {} i an object
   
