@@ -53,7 +53,7 @@ function displayResults(event) {
   var results = [
     {url: "https://cdn.shopify.com/s/files/1/0075/0639/5203/products/Untitled-1_904c9223-4ffc-4b87-a57d-693893a49df2_600x.jpg?v=1576759264", name: "cream of nature mango shampoo+ condish set", type: "4" ,frizz: false , damage:false , growth:false, dry:true}, 
     {url: "https://image.influenster.com/eyJrZXkiOiAibWVkaWEvcHJvZHVjdC9pbWFnZS9wcm9kdWN0L2ltYWdlL2ZlNDRmYzEzYjJjYTMwYjg4MDdmZjhkZWZlYTQ5YzU5MC5qcGciLCAiZWRpdHMiOiB7InJlc2l6ZSI6IHsiaGVpZ2h0IjogNzUwLCAid2lkdGgiOiA3NTAsICJiYWNrZ3JvdW5kIjogeyJyIjogMSwgImIiOiAxLCAiYWxwaGEiOiAwLCAiZyI6IDF9LCAid2l0aG91dEVubGFyZ2VtZW50IjogdHJ1ZSwgImZpdCI6ICJpbnNpZGUifX0sICJidWNrZXQiOiAiaW5mbHVlbnN0ZXJfcHJvZHVjdGlvbiIsICJleHRlbmQiOiB7fX0=", name: "ArtNaturals Moroccan Argan Oil Hair Loss Shampoo & Conditioner Set",name: "argan oil hair loss shampoo", type: "4" ,frizz:false, damage:false , growth:true, dry:false}, 
-    {url: "https://lh3.googleusercontent.com/proxy/ovZLAP0YS8NK8Re3GB8jgHXWicrDfYZf65xomH3imzrAj16PMhNK29H2qDzUXMkOp7QXSBkS3CdRUnv7f67ZZTgreFLv3l4hCJhK9L_NhJj0jgg-9wk8HFly-ZFH7et0r3lblTWIjGejpv5ySarsamcf1Q", name: "mop top anti frizz gel", type: "4" , frizz:true , damage:false , growth:false, dry:false},
+    {url: "https://cdn.shopify.com/s/files/1/1241/7084/products/smoothing-shampoo_9d5adcfe-5735-46cd-9f7f-b263c72fd96f_grande.jpg?v=1528689570", name: " Palmer’s Olive Oil Formula Smoothing Shampoo", type: "4" , frizz:true , damage:false , growth:false, dry:false},
     {url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nouripanati.com%2Fproducts%2Fhydrathermanaturals-aminoplusproteindeepconditi&psig=AOvVaw2CuGdw65q85apJYEArqtCW&ust=1596657672294000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDUsb2rgusCFQAAAAAdAAAAABAE", name: "Hydratherma Naturals Amino Plus Protein Deep Conditioning Treatment, 8 Oz", type: "4" , frizz:false , damage:true , growth:false, dry:false}];
 
   // represents one product ^^ , everything inside {} i an object
@@ -86,6 +86,10 @@ function renderProduct(product) {
 
        if (product.type == hairType){
             return true;} 
+       if (product.damage == true && damage == "somedamage"){
+          return true;}
+        else if (product.damage == true && damage == "highdamage"){
+          return true;}        
        if (product.growth == true && growth == "growth"){
           return true;} 
       if (product.dry== true && porosity == "low"){

@@ -86,6 +86,10 @@ function renderProduct(product) {
 
        if (product.type == hairType){
             return true;} 
+       if (product.damage == true && damage == "somedamage"){
+          return true;}
+        else if (product.damage == true && damage == "highdamage"){
+          return true;}       
        if (product.growth == true && growth == "growth"){
           return true;} 
       if (product.dry== true && porosity == "low"){
