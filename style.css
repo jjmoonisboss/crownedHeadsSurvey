@@ -65,6 +65,12 @@ section::after {
   left: 11px;
 }
 
+.light {
+  /*--primary: hsl(250, 100%, 44%);*/
+  --other: hsl(0, 0%, 14%);
+
+ /* background: hsl(0, 0%, 98%); */
+}
 
 /* label */
 label {
