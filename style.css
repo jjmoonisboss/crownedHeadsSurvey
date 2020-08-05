@@ -20,158 +20,58 @@
   margin: 10px;
 }
 
-/* BUTTON STYLES */
-/* section */
-section {
-  width: 50%;
-  min-height: inherit;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
-  position: relative;
-}
 
-section::before,
-section::after {
-  content: "";
-  display: block;
-
-  border-radius: 100%;
-
-  position: absolute;
-}
-
-section::before {
-  width: 30px;
-  height: 30px;
-
-  background: var(--primary);
-  clip-path: polygon(0 100%, 100% 0, 100% 100%);
-
-  top: 18px;
-  left: 18px;
-}
-
-section::after {
-  width: 42px;
-  height: 42px;
-
-  border: 1px solid var(--primary);
-
-  top: 11px;
-  left: 11px;
-}
-
-.light {
-  /*--primary: hsl(250, 100%, 44%);*/
-  --other: hsl(0, 0%, 14%);
-
- /* background: hsl(0, 0%, 98%); */
-}
-
-/* label */
-label {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-
-  margin: 12px 0;
-
+.option-input {
+  @include appearance(none);
+  @include position($option-size/3 0 0 0);
+  @include size($option-size);
+  @include transition;
+  background: $option-color;
+  border: none;
+  color: #fff;
   cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
   position: relative;
-}
+  z-index: 1000;
 
+  &:hover {
+    background: darken($option-color, 15%);
+  }
 
-/* input */
-input {
-  opacity: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  border: 1px solid var(--primary);
+  &:checked {
+    background: $checked-option-color;
 
-}
+    // checkmark
+    &::before {
+      @include size($option-size);
+      @include position(absolute);
+      content: '\2716';
+      display: inline-block;
+      font-size: $option-size/1.5;
+      text-align: center;
+      line-height: $option-size;
+    }
 
+    // animted wave
+    &::after {
+      @include animation(click-wave $explosion-duration);
+      background: $checked-option-color;
+      content: '';
+      display: block;
+      position: relative;
+      z-index: 100;
+    }
+  }
+  
+  &.radio {
+    border-radius: 50%;    
 
-/* .design */
-.design {
-  width: 16px;
-  height: 16px;
-
-  border: 1px solid var(--other);
-  border-radius: 100%;
-  margin-right: 16px;
-
-  position: relative;
-}
-
-.design::before,
-/*after that controls what happens when you click*/
-.design::after {
-  content: "";
-  display: block;
-
-  width: inherit;
-  height: inherit;
-
-  border-radius: inherit;
-
-  position: absolute;
-  transform: scale(0);
-  transform-origin: center center;
-}
-
-.design:before {
-  background: var(--other);
-  opacity: 0;
-  transition: .3s;
-}
-
-.design::after {
-  background: var(--primary);
-  opacity: .4;
-  transition: .6s;
-}
-
-
-
-/* .text */
-.text {
-  color: var(--other);
-  font-weight: bold;
-}
-
-
-/* checked state */
-input:checked+.design::before {
-  opacity: 1;
-  transform: scale(.6);
-}
-
-
-/* other states */
-input:hover+.design,
-input:focus+.design {
-  border: 1px solid var(--primary);
-}
-
-input:hover+.design:before,
-input:focus+.design:before {
-  background: var(--primary);
-}
-
-input:hover~.text {
-  color: var(--primary);
-}
-
-input:focus+.design::after,
-input:active+.design::after {
-  opacity: .1;
-  transform: scale(2.6);
+    &::after {
+      border-radius: 50%;
+    }
+  }
 }
