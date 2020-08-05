@@ -8,44 +8,7 @@ function wavyResults(){
   var frizz = form.elements['frizz'].value; //none,regular,crazy
   var damage = form.elements['damage'].value; //nodamage,somedamage, highdamage
   var growth = form.elements['growth'].value; //growth, nogrowth
-  //var result = "https://sites.google.com/csedge.org/curlyhairresults/home";  
-
-//wrapped if statement checking if hairType = value + porosity hits another statement, etc
-
-//coach donna's src code:
-// if (hairType=="3a" && frizz=="none" && damage=="nodamage" && porosity=="low"){}
-// else if(hairType=="3b" && frizz=="none" && damage=="somedamage" && porosity=="high"){result = "";
-// }
-
-
-//   if (hairType == "3a"){
-//     result="https://sites.google.com/csedge.org/results-3a/home";
-//     // if (porosity == "high"){
-//     //     if (damage == "highdamage"){
-//     //       result="https://sites.google.com/csedge.org/curlyhairresults/home";
-//     //     }
-//     // }
-//   }
-//   else if (hairType == "3b"){
-//     result="https://sites.google.com/csedge.org/results-3b/home";
-//     //   if (porosity == "high"){
-//     //   if (frizz == "crazy"){
-//     //     result="https://sites.google.com/csedge.org/curlyhairresults/home";
-//     //   }
-//     // }
-//   }
   
-//   else if (hairType == "3c"){
-//     result="https://sites.google.com/csedge.org/results-3c/home ";
-//       // if (porosity == "high"){
-//       // if (frizz == "crazy"){
-//       //   result="";
-//       //}
-//     //}
-//   }
-
-
-// window.open(result);
 }
 
 function displayResults(event) {
@@ -91,7 +54,8 @@ function renderProduct(product) {
         else if (product.damage == true && damage == "highdamage"){
           return true;}        
        if (product.growth == true && growth == "growth"){
-          return true;} 
+          return true;
+          } 
       if (product.dry== true && porosity == "low"){
             return true;
           }

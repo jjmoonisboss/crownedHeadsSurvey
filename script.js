@@ -1,5 +1,5 @@
-function kinkyResults(){
-  var form = document.getElementById("kinkyhair");
+function curlyResults(){
+  var form = document.getElementById("curlyhair");
   // finding id curly hair from curly.html and storing it in the var form
 
 // its grabbing curltype and extracting its value which stores it into form

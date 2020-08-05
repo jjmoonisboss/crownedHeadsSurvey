@@ -137,6 +137,23 @@ label{
   height: 250px;
 }
 
+#backBtn1 {
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 2px solid ;
+  border-color: white;
+  background-color:#ffdbd9;  /* Green */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
 
 
 
