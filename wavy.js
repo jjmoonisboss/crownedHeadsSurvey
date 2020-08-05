@@ -9,12 +9,13 @@ function wavyResults(){
   var damage = form.elements['damage'].value; //nodamage,somedamage, highdamage
   var growth = form.elements['growth'].value; //growth, nogrowth
   
+  
 }
 
 function displayResults(event) {
   console.log("e");
   var results = [
-    {url: "https://cdn.shopify.com/s/files/1/0660/1153/products/main02.png?v=1478069565", name: " hydrating argan oil hair mask and deep conditioner", type: "2" ,frizz: false , damage:false , growth:false, dry:true}, 
+    {url: "https://cdn.shopify.com/s/files/1/0660/1153/products/main02.png?v=1478069565" ,name: " hydrating argan oil hair mask and deep conditioner", type: "2" ,frizz: false , damage:false , growth:false, dry:true}, 
     {url: "https://lesalonimperial.com/wp-content/uploads/2017/06/71N3f8VPGVL._SL1159_.jpg", name: "ArtNaturals Moroccan Argan Oil Hair Loss Shampoo & Conditioner Set",name: "argan oil hair loss shampoo", type: "2" ,frizz:false, damage:false , growth:true, dry:false}, 
     {url: "https://cdn.shopify.com/s/files/1/0024/3381/0483/products/Gel_1@2x.jpg?v=1569946535", name: "curly Hair Solutions - Curl Keeper GEL Ultimate Hold With Frizz Control", type: "2" , frizz:true , damage:false , growth:false, dry:false},
     {url: "https://komazahaircare.com/wp-content/uploads/2016/03/Protein-Hair-Strengthener.jpg", name: "komaza care protein hair strengthener", type: "2" , frizz:false , damage:true , growth:false, dry:false}];
@@ -51,23 +52,21 @@ function renderProduct(product) {
             return true;} 
        if (product.damage == true && damage == "somedamage"){
           return true;}
-        else if (product.damage == true && damage == "highdamage"){
-          return true;}        
+       else if (product.damage == true && damage == "highdamage"){
+          return true;}       
        if (product.growth == true && growth == "growth"){
-          return true;
-          } 
-      if (product.dry== true && porosity == "low"){
+          return true;} 
+       if (product.dry== true && porosity == "low"){
             return true;
           }
-      else if (product.dry== true && porosity == "high"){
+       else if (product.dry== true && porosity == "high"){
               return true;
             }     
-      if (product.frizz == true && frizz == "crazy"){
+       if (product.frizz == true && frizz == "crazy"){
+        return true;} 
+       else if (product.frizz == true && frizz == "regular"){
         return true;
-      } 
-      else if (product.frizz == true && frizz == "regular"){
-        return true;
-      }
+        }
     return false;
 
     
@@ -83,3 +82,8 @@ function renderProduct(product) {
 // alert('Your hair has' + ' ' + Dataform.get('curltype') + ' ' + Dataform.get('pore') + ' ' + Dataform.get('frizz') + ' ' + Dataform.get('damage') );
 
 // if 'curltype' 
+
+
+
+
+

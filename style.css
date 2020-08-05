@@ -26,8 +26,8 @@ html {
   margin: 10px;
 }
 
+
 input[type=text] {
-  width: 100%;
   padding: 12px 20px;
   margin: 50px 0px;
   box-sizing: border-box;
@@ -37,15 +37,26 @@ input[type=text] {
   outline: none;
   position: relative;
   width: 45%;
+  margin-top: 5px;
+
 }
 
 input[type=text]:focus {
   border: 3px solid #555;
+
 }
 
-
+#top1{
+  margin-left: 15%;
+  margin-right: 15%;
+}
 label{
     display: block;
+
+}
+
+.radioBtn{
+ visibility:hidden;
 
 }
 
@@ -53,6 +64,8 @@ label{
   
   padding: 5px;
   text-align: center;
+
+
 
 }
 
@@ -62,7 +75,6 @@ label{
   border: none;
   color: white;
   padding: 20px;
-  text-align: center;
   text-decoration: none;
   display: center;
   font-size: 25px;
@@ -92,7 +104,6 @@ label{
 } 
 
 #kinkyResults{
- text-align:center;
   background-color: #ffdbd9; /* Green */
   border: none;
   color: white;
@@ -153,6 +164,23 @@ label{
   height: 250px;
 }
 
+.surveyphotos {
+  margin-left: 350px;
+}
+
+/* .model-4 {
+  border: solid 1px black;
+} */ 
+
+/* .model-3 {
+  margin-left: -175px;
+} */
+
+/* .model-2{
+  margin-right: 100px;
+}
+*/
+
 #backBtn1 {
   background-color: #6c757c; /* Green */
   border: none;
@@ -162,10 +190,12 @@ label{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: auto auto;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 12px;
+  margin-top: 15px;
+
 
 }
 
@@ -174,6 +204,7 @@ label{
   color: white;
   border: 2px solid #6c757c;
 }
+
 
 
 
