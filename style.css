@@ -1,4 +1,10 @@
+body{
+  background-color: #FFE5E3
+}
 
+html {
+  background-color: #FFE5E3;
+}
 
 .survey {
   background-color:#FFE5E3;
@@ -22,24 +28,114 @@
 
 
 
+label{
+    display: block;
+
+}
 
 .questionDesign {
-  background-color: white;
+  
+  padding: 5px;
   text-align: center;
 
 }
 
-.wavyResults{
+#wavyResults{
+ text-align:center;
+  background-color: #ffdbd9; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: center;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-left: 25%;
+  margin-right: 25%
 
 }
 
+ #curlyResults{
+  background-color: #ffdbd9; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: center;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-left: 25%;
+  margin-right: 25%
 
-.
+} 
 
+#kinkyResults{
+ text-align:center;
+  background-color: #ffdbd9; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: center;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-left: 25%;
+  margin-right: 25%
+}
 
+.threea-hair {
+  max-width: 250px;
+  height: 250px;
+}
 
+.threeb-hair {
+  max-width: 250px;
+  height: 250px;
+}
 
+.threec-hair {
+  max-width: 250px;
+  height: 250px;
+}
 
+.foura-hair {
+  max-width: 250px;
+  height: 250px;
+}
+
+.fourb-hair {
+  max-width: 250px;
+  height: 250px;
+}
+
+.fourc-hair {
+  max-width: 250px;
+  height: 250px;
+}
+
+.twoa-hair {
+  max-width: 250px;
+  height: 250px;
+}
+
+.twob-hair {
+  max-width: 250px;
+  height: 250px;
+}
+
+.twoc-hair {
+  max-width: 250px;
+  height: 250px;
+}
 
 
 
