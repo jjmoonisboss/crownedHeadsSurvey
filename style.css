@@ -87,7 +87,7 @@ label{
 }
 
  #curlyResults{
-  background-color: #ffdbd9; /* Green */
+  background-color: #000000; /* Green */
   border: none;
   color: white;
   padding: 20px;
@@ -97,14 +97,13 @@ label{
   font-size: 25px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 12px;
   margin-left: 25%;
   margin-right: 25%
 
 } 
 
 #kinkyResults{
-  background-color: #ffdbd9; /* Green */
+  background-color: #000000; /* Green */
   border: none;
   color: white;
   padding: 20px;
@@ -114,7 +113,6 @@ label{
   font-size: 25px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 12px;
   margin-left: 25%;
   margin-right: 25%
 }
@@ -209,7 +207,7 @@ label{
   border: 2px solid #6c757c;
 }
 
-
+.text 
 
 
 
