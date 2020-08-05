@@ -168,18 +168,22 @@ label{
   margin-left: 350px;
 }
 
-/* .model-4 {
-  border: solid 1px black;
+.model-4 {
+  width: 20% ;
+  height: 50% ;
 } */ 
 
-/* .model-3 {
-  margin-left: -175px;
-} */
+ .model-3 {
+  width: 20%;
+  height: 50% ;
+} 
 
-/* .model-2{
+.model-2{
+  width: 20%;
+  height: 50% ;
   margin-right: 100px;
 }
-*/
+
 
 #backBtn1 {
   background-color: #6c757c; /* Green */
