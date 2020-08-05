@@ -12,6 +12,8 @@
 </head>
 
 <body>
+  <button id = "backBtn1"> Previous </button>
+  <br>
     <!-- <script src="script.js"></script>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<a class="navbar-brand" href="https://crownedheadswebsite.taliacampbell.repl.co/">
@@ -44,7 +46,7 @@
 
   <form class="survey" id ="curlyhair">
 	  <div class="container">
-		  <h3> Select the image that closely resembles your hair</h3>
+		  <h3 class="radio-curl"> Select the image that closely resembles your hair</h3>
 		<!-- <center> -->
 		    <div class="row">
 			    <div class="col-sm">
@@ -54,7 +56,7 @@
             <br>
           <!-- <div class="d-flex align-items-end"> -->
             <label for="3a-hair">
-              <input type="radio" id="3a-hair"name="curltype" value="3a">
+              <input  class ="radio-curl" type="radio" id="3a-hair"name="curltype" value="3a">
               <span class="design"></span>
               <span class="text">A</span>
             </label>
@@ -72,7 +74,7 @@
             <!-- </a> -->
             <br>
             <label for="3b-hair">
-              <input type="radio" id="3b-hair" name="curltype" value="3b">
+              <input class = "radio-curl" type="radio" id="3b-hair" name="curltype" value="3b">
               <span class="design"></span>
               <span class="text">B</span>
             </label>
@@ -87,7 +89,7 @@
             <!-- </a> -->
             <br>
             <label for="3c-hair">
-              <input type="radio" id="3c-hair" name="curltype" value="3c">
+              <input  class="radio-curl" type="radio" id="3c-hair" name="curltype" value="3c">
               <span class="design"></span>
               <span class="text">C</span>
             </label>
@@ -104,25 +106,25 @@
       </div>
       <span class="align-baseline">
 
-      <h3>What is your hair porosity? If you are not sure, please watch this <a class="video" href="https://youtu.be/BfFYsmARnjE"> video </a> to find out:</h3>
-      <p> Prosity measures how well your hair can obsorb moisture. Low porosity means your hair tends to repel water. Normal porosity means that your hair obsorbs a normal amount of moisture. High porosity means your hair easily obsorbs moisture. </p>
+      <h3 class="porosity-choice">What is your hair porosity? If you are not sure, please watch this <a class="video" href="https://youtu.be/BfFYsmARnjE"> video </a> to find out:</h3>
+      <h4 class="porosity-choice"> Prosity measures how well your hair can obsorb moisture. Low porosity means your hair tends to repel water. Normal porosity means that your hair obsorbs a normal amount of moisture. High porosity means your hair easily obsorbs moisture. </h4>
 <!-- insert video instead of link -->
 
   <br>
     <label for="High">
-	    <input type="radio" id="High"name="pore" value="high">
+	    <input class="porosity-choice" type="radio" id="High"name="pore" value="high">
       <span class="option"></span>
       <span class="text">High porosity</span>
     </label>
 
    <label>
-	  <input type="radio" name="pore" value="low">
+	  <input class="porosity-choice" type="radio" name="pore" value="low">
    <span class = "design"> </span>
    <span class = "text"> Low Prosity </span>
    </label>
 
    <label>
-    <input type="radio" name="pore" value = "normal">
+    <input class="porosity-choice" type="radio" name="pore" value = "normal">
     <span class="design"></span>
     <span class="text">Normal Porosity</span>
   </label>
@@ -135,22 +137,22 @@
     <!-- question 7 --> 
     <span class="align-baseline">
 
-    <h3>How frizzy is your hair?</h3>
+    <h3 class="frizz-choice">How frizzy is your hair?</h3>
   <label>
-    <input type="radio" name="frizz" value = "none">
+    <input class="frizz-choice" type="radio" name="frizz" value = "none">
     <span class="design"></span>
     <span class="text">Little to None</span>
   </label>
   <!-- Little to none <input type="radio" name="frizz" value="none"> -->
   <label>
-    <input type="radio" name="frizz" value = "regular">
+    <input class="frizz-choice" type="radio" name="frizz" value = "regular">
     <span class="design"></span>
     <span class="text">Controllable</span>
   </label>
   
 	<!-- Controllable <input type="radio" name="frizz" value="regular"> -->
   <label>
-    <input type="radio" name="frizz" value = "crazy">
+    <input class="frizz-choice" type="radio" name="frizz" value = "crazy">
     <span class="design"></span>
     <span class="text">Out of Control</span>
   </label></span>
@@ -160,22 +162,22 @@
     <!-- question 8 --> 
     <span class="align-baseline">
 
-    <h3> What level of heat damage do you have? </h3>
+    <h3 class="heat-choice"> What level of heat damage do you have? </h3>
     
     <label>
-    <input type="radio" name="damage" value="nodamage">
+    <input class="heat-choice" type="radio" name="damage" value="nodamage">
     <span class="design"></span>
     <span class = "text"> Little to none</span>
     </label>
 
     <label>
-    <input type="radio" name="damage" value="somedamage">
+    <input class="heat-choice" type="radio" name="damage" value="somedamage">
     <span class="design"></span>
     <span class = "text"> Some damage</span>
     </label>
     
     <label>
-    <input type="radio" name="damage" value="highdamage">
+    <input class="heat-choice" type="radio" name="damage" value="highdamage">
     <span class="design"></span>
     <span class = "text"> Major damage</span>
     </label></span>
@@ -186,15 +188,15 @@
      <!-- question 9 --> 
      <span class="align-baseline">
 
-    <h3>Do you desire hair growth?</h3>
+    <h3 class="growth-choice">Do you desire hair growth?</h3>
     <label>
-      <input type="radio" name="growth" value = "regular">
+      <input class="growth-choice" type="radio" name="growth" value = "regular">
       <span class="design"></span>
       <span class="text">Yes, I do desire growth</span>
     </label>
     <!-- Yes I do desire growth<input type="radio" name="growth" value="growth"> -->
     <label>
-      <input type="radio" name="growth" value = "nogrowth">
+      <input class="growth-choice" type="radio" name="growth" value = "nogrowth">
       <span class="design"></span>
       <span class="text">No, that isn't a particular interest of mine</span>
     </label></span>
