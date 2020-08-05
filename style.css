@@ -138,20 +138,25 @@ label{
 }
 
 #backBtn1 {
-  margin-top: 20px;
-  border-radius: 12px;
-  border: 2px solid ;
-  border-color: white;
-  background-color:#ffdbd9;  /* Green */
+  background-color: #6c757c; /* Green */
+  border: none;
   color: white;
-  padding: 20px;
+  padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 25px;
+  font-size: 16px;
   margin: 4px 2px;
+  transition-duration: 0.4s;
   cursor: pointer;
+  border-radius: 12px;
 
+}
+
+#backBtn1:hover{
+  background-color: #7d8991;
+  color: white;
+  border: 2px solid #6c757c;
 }
 
 

@@ -53,7 +53,7 @@ function displayResults(event) {
   var results = [
     {url: "https://i01.hsncdn.com/is/image/HomeShoppingNetwork/carols-daughter-almond-milk-ultra-nourishing-hair-mask~553557.jpg", name: "Carol’s Daughter Almond Milk Ultra-Nourishing Hair Mask", type: "3" ,frizz: false , damage:false , growth:false, dry:true}, 
     {url: "https://lesalonimperial.com/wp-content/uploads/2017/06/71N3f8VPGVL._SL1159_.jpg", name: "ArtNaturals Moroccan Argan Oil Hair Loss Shampoo & Conditioner Set",name: "argan oil hair loss shampoo", type: "3" ,frizz:false, damage:false , growth:true, dry:false}, 
-    {url: "https://lh3.googleusercontent.com/proxy/ovZLAP0YS8NK8Re3GB8jgHXWicrDfYZf65xomH3imzrAj16PMhNK29H2qDzUXMkOp7QXSBkS3CdRUnv7f67ZZTgreFLv3l4hCJhK9L_NhJj0jgg-9wk8HFly-ZFH7et0r3lblTWIjGejpv5ySarsamcf1Q", name: "mop top anti frizz gel", type: "3" , frizz:true , damage:false , growth:false, dry:false},
+    {url: "https://images-na.ssl-images-amazon.com/images/I/41wFgaLe6yL.jpg", name: "mop top anti frizz gel", type: "3" , frizz:true , damage:false , growth:false, dry:false},
     {url: "https://cdn.shopify.com/s/files/1/1006/4028/products/moist_shampoo_website2_1024x.png?v=1594676151", name: "Bounce Curl Pure Silk Moisturizing Shampoo", type: "3" , frizz:false , damage:true , growth:false, dry:false}];
 
   // represents one product ^^ , everything inside {} i an object
@@ -88,22 +88,21 @@ function renderProduct(product) {
             return true;} 
        if (product.damage == true && damage == "somedamage"){
           return true;}
-        else if (product.damage == true && damage == "highdamage"){
+       else if (product.damage == true && damage == "highdamage"){
           return true;}       
        if (product.growth == true && growth == "growth"){
           return true;} 
-      if (product.dry== true && porosity == "low"){
+       if (product.dry== true && porosity == "low"){
             return true;
           }
-      else if (product.dry== true && porosity == "high"){
+       else if (product.dry== true && porosity == "high"){
               return true;
             }     
-      if (product.frizz == true && frizz == "crazy"){
+       if (product.frizz == true && frizz == "crazy"){
+        return true;} 
+       else if (product.frizz == true && frizz == "regular"){
         return true;
-      } 
-      else if (product.frizz == true && frizz == "regular"){
-        return true;
-      }
+        }
     return false;
 
     
