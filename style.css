@@ -50,11 +50,11 @@ input[type=text]:focus {
   margin-left: 15%;
   margin-right: 15%;
 }
-label{
+/*label{
     display: block;
 
 }
-
+*/
 .radioBtn{
  visibility:hidden;
 
