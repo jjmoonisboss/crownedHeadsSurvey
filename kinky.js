@@ -54,7 +54,7 @@ function displayResults(event) {
     {url: "https://cdn.shopify.com/s/files/1/0075/0639/5203/products/Untitled-1_904c9223-4ffc-4b87-a57d-693893a49df2_600x.jpg?v=1576759264", name: "cream of nature mango shampoo+ condish set", type: "4" ,frizz: false , damage:false , growth:false, dry:true}, 
     {url: "https://lesalonimperial.com/wp-content/uploads/2017/06/71N3f8VPGVL._SL1159_.jpg", name: "ArtNaturals Moroccan Argan Oil Hair Loss Shampoo & Conditioner Set", name: "argan oil hair loss shampoo", type: "4" ,frizz:false, damage:false , growth:true, dry:false}, 
     {url: "https://cdn.shopify.com/s/files/1/1241/7084/products/smoothing-shampoo_9d5adcfe-5735-46cd-9f7f-b263c72fd96f_grande.jpg?v=1528689570", name: " Palmer’s Olive Oil Formula Smoothing Shampoo", type: "4" , frizz:true , damage:false , growth:false, dry:false},
-    {url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nouripanati.com%2Fproducts%2Fhydrathermanaturals-aminoplusproteindeepconditi&psig=AOvVaw2CuGdw65q85apJYEArqtCW&ust=1596657672294000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDUsb2rgusCFQAAAAAdAAAAABAE", name: "Hydratherma Naturals Amino Plus Protein Deep Conditioning Treatment, 8 Oz", type: "4" , frizz:false , damage:true , growth:false, dry:false}];
+    {url: "https://images-na.ssl-images-amazon.com/images/I/61om0w0yi6L._SL1500_.jpg", name: "Hydratherma Naturals Amino Plus Protein Deep Conditioning Treatment, 8 Oz", type: "4" , frizz:false , damage:true , growth:false, dry:false}];
 
   // represents one product ^^ , everything inside {} i an object
   
