@@ -45,7 +45,7 @@
 
 <form class="survey" id ="wavyhair">
      <div class="container">
-		  <h3> Select the image that closely resembles your hair</h3>
+		  <h2 class="radio-wavy"> Select the image that closely resembles your hair</h2>
 		<!-- <center> -->
 		   <div class="row">
           <div class="col-sm">
@@ -54,7 +54,7 @@
             <!-- </a> -->
               <br>
               <label for="2a-hair">
-                <input type="radio" id="2a-hair"name="2-hair" value="2hair">
+                <input class="radio-wavy" type="radio" id="2a-hair"name="2-hair" value="2hair">
                 <span class="design"></span>
                 <span class="text">2a-Hair</span>
               </label>
@@ -69,7 +69,7 @@
               <!-- </a> -->
               <br>
               <label for="2b-hair">
-                <input type="radio" id="2b-hair"name="2-hair" value="2hair">
+                <input class="radio-wavy" type="radio" id="2b-hair"name="2-hair" value="2hair">
                 <span class="design"></span>
                 <span class="text">2b-Hair</span>
               </label>
@@ -84,7 +84,7 @@
               <!-- </a> -->
               <br>
               <label for="2c-hair">
-                <input type="radio" id="2c-hair" name="2-hair" value="2hair">
+                <input class="radio-wavy" type="radio" id="2c-hair" name="2-hair" value="2hair">
                 <span class="design"></span>
                 <span class="text">2c-Hair</span>
               </label>
@@ -102,25 +102,25 @@
 
            <!-- question 6 --> 
       <span class="align-baseline">
-      <h3>What is your hair porosity? If you do not, please watch this <a class="video" href="https://youtu.be/BfFYsmARnjE"> video </a> to find out:</h3>
-      <p> Prosity measures how well your hair can obsorb moisture. Low porosity means your hair tends to repel water. Normal porosity means that your hair obsorbs a normal amount of moisture. High porosity means your hair easily obsorbs moisture. </p>
+      <h2 class="porosity-choice">What is your hair porosity? If you do not, please watch this <a class="video" href="https://youtu.be/BfFYsmARnjE"> video </a> to find out:</h2>
+      <h3 class="porosity-choice"> Porosity  measures how well your hair can absorb moisture. Low porosity means your hair tends to repel water. Normal porosity means that your hair obsorbs a normal amount of moisture. High porosity means your hair easily absorbs moisture. </h3>
 <!-- insert video instead of link -->
 
   <br>
     <label for="High">
-	    <input type="radio" id="High"name="pore" value="high">
+	    <input class="porosity-choice" type="radio" id="High"name="pore" value="high">
       <span class="design"></span>
       <span class="text">High porosity</span>
     </label>
 
    <label>
-	  <input type="radio" name="pore" value="low">
+	  <input class="porosity-choice" type="radio" name="pore" value="low">
    <span class = "design"> </span>
    <span class = "text"> Low Prosity </span>
    </label>
 
    <label>
-    <input type="radio" name="pore" value = "normal">
+    <input class="porosity-choice" type="radio" name="pore" value = "normal">
     <span class="design"></span>
     <span class="text">Normal Porosity</span>
   </label></span>
@@ -130,22 +130,22 @@
     <!-- question 7 --> 
     <span class="align-baseline">
 
-    <h3>How frizzy is your hair?</h3>
+    <h2 class="frizz-choice">How frizzy is your hair?</h2>
   <label>
-    <input type="radio" name="frizz" value = "none">
+    <input  class="frizz-choice" type="radio" name="frizz" value = "none">
     <span class="design"></span>
     <span class="text">Little to None</span>
   </label>
   <!-- Little to none <input type="radio" name="frizz" value="none"> -->
   <label>
-    <input type="radio" name="frizz" value = "regular">
+    <input class="frizz-choice" type="radio" name="frizz" value = "regular">
     <span class="design"></span>
     <span class="text">Controllable</span>
   </label>
   
 	<!-- Controllable <input type="radio" name="frizz" value="regular"> -->
   <label>
-    <input type="radio" name="frizz" value = "crazy">
+    <input class="frizz-choice" type="radio" name="frizz" value = "crazy">
     <span class="design"></span>
     <span class="text">Out of Control</span>
   </label></span>
@@ -156,22 +156,22 @@
     <!-- question 8 --> 
     <span class="align-baseline">
 
-    <h3> What level of heat damage do you have? </h3>
+    <h2 class="heat-choice"> What level of heat damage do you have? </h2>
     
     <label>
-    <input type="radio" name="damage" value="nodamage">
+    <input class="heat-choice" type="radio" name="damage" value="nodamage">
     <span class="design"></span>
     <span class = "text"> Little to none</span>
     </label>
 
     <label>
-    <input type="radio" name="damage" value="somedamage">
+    <input class="heat-choice" type="radio" name="damage" value="somedamage">
     <span class="design"></span>
     <span class = "text"> Some damage</span>
     </label>
     
     <label>
-    <input type="radio" name="damage" value="highdamage">
+    <input class="heat-choice" type="radio" name="damage" value="highdamage">
     <span class="design"></span>
     <span class = "text"> Major Damage</span>
     </label></span>
@@ -181,15 +181,15 @@
      <!-- question 9 --> 
      <span class="align-baseline">
 
-    <h3>Do you desire hair growth?</h3>
+    <h2 class="growth-choice">Do you desire hair growth?</h2>
     <label>
-      <input type="radio" name="growth" value = "regular">
+      <input class="growth-choice" type="radio" name="growth" value = "regular">
       <span class="design"></span>
       <span class="text">Yes I do desire growth</span>
     </label>
     <!-- Yes I do desire growth<input type="radio" name="growth" value="growth"> -->
     <label>
-      <input type="radio" name="growth" value = "nogrowth">
+      <input class="growth-choice" type="radio" name="growth" value = "nogrowth">
       <span class="design"></span>
       <span class="text">No, that isn't a particular interest of mine</span>
     </label></span>
