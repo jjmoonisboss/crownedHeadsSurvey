@@ -23,55 +23,8 @@
 
 
 
-.option-input {
-  @include appearance(none);
-  @include position($option-size/3 0 0 0);
-  @include size($option-size);
-  @include transition;
-  background: $option-color;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  margin-right: 0.5rem;
-  outline: none;
-  position: relative;
-  z-index: 1000;
+.questionDesign {
+  background-color: white;
+  text-align: center;
 
-  &:hover {
-    background: darken($option-color, 15%);
-  }
-
-  &:checked {
-    background: $checked-option-color;
-
-    // checkmark
-    &::before {
-      @include size($option-size);
-      @include position(absolute);
-      content: '\2716';
-      display: inline-block;
-      font-size: $option-size/1.5;
-      text-align: center;
-      line-height: $option-size;
-    }
-
-    // animted wave
-    &::after {
-      @include animation(click-wave $explosion-duration);
-      background: $checked-option-color;
-      content: '';
-      display: block;
-      position: relative;
-      z-index: 100;
-    }
-  }
-  
-  &.radio {
-    border-radius: 50%;    
-
-    &::after {
-      border-radius: 50%;
-    }
-  }
 }
