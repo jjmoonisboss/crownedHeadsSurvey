@@ -1,9 +1,9 @@
 body{
-  background-color: #FFE5E3
+  background-color: transparent;
 }
 
 html {
-  background-color: #FFE5E3;
+  background-color: transparent;
 }
 
 .survey {
@@ -12,12 +12,12 @@ html {
 
 /* Navigation Bar */
 .navbar{
-  background-color: #FFE5E3;
+  background-color: transparent;
 }
 
 
 .example{
-  background-color: #FFE5E3;
+  background-color: transparent;
 }
 
 .slide {
