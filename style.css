@@ -1,3 +1,4 @@
+
 body{
   background-color: transparent;
 }
@@ -184,27 +185,26 @@ input[type=text]:focus {
 
 
 #backBtn1 {
-  background-color: #6c757c; /* Green */
+  background-color: #000000; /* Green */
   border: none;
   color: white;
   padding: 20px;
   text-align: center;
   text-decoration: none;
   display: center;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 25px;
   transition-duration: 0.4s;
+  margin: 4px 2px;
   cursor: pointer;
-  border-radius: 12px;
-  margin-left: 2%;
-  margin-right: 15%;
+  margin-left: 25%;
+  margin-right: 25%
 
 }
 
 #backBtn1:hover{
-  background-color: #7d8991;
+  background-color: #6c757c;
   color: white;
-  border: 2px solid #6c757c;
+  border: 2px solid #000000;
 }
 
 .text {
@@ -256,5 +256,21 @@ input[type=text]:focus {
   font-family: 'Barlow', sans-serif;
 }
 
+.card-1 {
+  max-height: 502px;
+  margin-left: 20px;
+}
+
+.card-2 {
+  max-height: 502px;
+}
 
 
+.card1 {
+  margin-right: 20px;
+  margin-left: -100px;
+}
+
+.card2,.card3,.card4 {
+  margin-right: 20px;
+}
